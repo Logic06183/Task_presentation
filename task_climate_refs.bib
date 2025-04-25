@@ -1,0 +1,552 @@
+%% LaTeX Beamer presentation: Climate and Health Prioritization for TASK
+\documentclass{beamer}
+
+% Enhanced packages for better styling
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{bibentry}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage{enumitem}
+
+% Wits Planetary Health inspired colors
+\definecolor{witsblue}{RGB}{0, 73, 135}      % Primary Wits blue
+\definecolor{witsgreen}{RGB}{0, 155, 119}    % Environmental green
+\definecolor{witsorange}{RGB}{232, 119, 34}  % Warm accent
+\definecolor{witsred}{RGB}{193, 39, 45}      % Alert/Warning
+\definecolor{witsgray}{RGB}{88, 89, 91}      % Neutral text
+\definecolor{witslight}{RGB}{244, 244, 244}  % Light background
+\definecolor{witspeach}{RGB}{255, 226, 199}  % Peach accent from thank you slide
+
+% Wits Planetary Health inspired theme
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamercolor{title}{fg=white, bg=witsblue}
+\setbeamercolor{frametitle}{fg=white, bg=witsblue}
+\setbeamercolor{structure}{fg=witsblue}
+\setbeamercolor{block title}{fg=white, bg=witsblue}
+\setbeamercolor{block body}{fg=black, bg=witslight}
+\setbeamercolor{itemize item}{fg=witsgreen}
+\setbeamercolor{itemize subitem}{fg=witsorange}
+\setbeamercolor{alerted text}{fg=witsred}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=witsgray}
+\setbeamercolor{example text}{fg=witsgreen}
+
+% Clean, modern fonts
+\usefonttheme{professionalfonts}
+\setbeamerfont{title}{size=\Large, series=\bfseries}
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
+\setbeamerfont{block title}{size=\normalsize, series=\bfseries}
+
+% Custom commands for Wits Planetary Health styling
+\newcommand{\highlight}[1]{\textcolor{witsred}{\textbf{#1}}}
+\newcommand{\greenhighlight}[1]{\textcolor{witsgreen}{\textbf{#1}}}
+\newcommand{\source}[1]{\vspace{0.3cm}\hfill\scriptsize\textcolor{witsgray}{Source: #1}}
+\newcommand{\witsicon}[1]{\textcolor{witsblue}{\large\faIcon{#1}}}
+
+% Custom block environments
+\newenvironment{impactblock}{\begin{tcolorbox}[colback=witsorange!15, colframe=witsorange, title=\textbf{Key Impact}, fonttitle=\color{white}]}{\end{tcolorbox}}
+\newenvironment{actionblock}{\begin{tcolorbox}[colback=witsgreen!15, colframe=witsgreen, title=\textbf{Action Item}, fonttitle=\color{white}]}{\end{tcolorbox}}
+\newenvironment{conceptblock}{\begin{tcolorbox}[colback=witslight, colframe=witsblue, title=\textbf{Key Concept}, fonttitle=\color{white}]}{\end{tcolorbox}}
+
+\title[Climate \& Health for TASK]{\textbf{Decarbonizing Clinical Research:} \\Why Climate and Health Should Be a Strategic Priority for TASK}
+\author{\textbf{Craig Parker} \\ \small{Wits Planetary Health, University of the Witwatersrand}}
+\date{\textbf{TASK Clinical Trials Afternoon Lecture, April 2025}}
+\logo{\includegraphics[height=0.9cm]{example-image}} % Replace with Wits Planetary Health logo
+
+% Add footer to all slides
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+      \usebeamerfont{date in head/foot}\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+    \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\begin{document}
+
+% Title page with Wits Planetary Health styling
+\begin{frame}[plain]
+\titlepage
+\begin{tikzpicture}[remember picture, overlay]
+% Bottom banner
+\fill[witsblue] (current page.south west) rectangle (current page.south east |- current page.south west + (0,1.2));
+% Curved design element - smoother curve matching rendered output
+\fill[witsgreen!70] (current page.north west) .. controls +(8,-5) and +(-2,-8) .. (current page.north east |- current page.north west + (0,-5));
+% Right side accent
+\fill[witsorange!60] (current page.east |- current page.north east + (0,-2)) .. controls +(-1,0) and +(1,0) .. (current page.east |- current page.south east + (0,5));
+% Caption
+\node[anchor=south east, xshift=-0.8cm, yshift=0.5cm] at (current page.south east) {\small\textcolor{white}{Wits Planetary Health Initiative}};
+% Globe icon
+\node[anchor=south west, xshift=0.8cm, yshift=0.5cm] at (current page.south west) {\textcolor{white}{\Large\faGlobeAfrica}};
+\end{tikzpicture}
+\end{frame}
+
+% Slide 1: Enhanced with icon and impact block
+\begin{frame}{Why Climate and Health Matter}
+\begin{columns}
+\column{0.15\textwidth}
+\centering
+\textcolor{witsgray}{\Large\faThermometerFull}\\
+\vspace{0.8cm}
+\textcolor{witsgray}{\Large\faGlobeAfrica}\\
+\vspace{0.8cm}
+\textcolor{witsgray}{\Large\faHandHoldingMedical}
+\column{0.85\textwidth}
+\begin{itemize}[spacing=0.7em]
+    \item Climate change is a \highlight{public health emergency}: rising deaths, heat stress, and malnutrition
+    \item LMICs, including South Africa, face disproportionate burdens
+    \item Health costs of climate inaction in LMICs: \highlight{US\$8.6--20.8 trillion by 2050}
+\end{itemize}
+\end{columns}
+
+\begin{impactblock}
+Climate change threatens to reverse decades of progress in global health outcomes
+\end{impactblock}
+
+\source{The Lancet Countdown, 2023}
+\end{frame}
+
+% Slide 2: South Africa's Exposure with visual enhancements
+\begin{frame}{South Africa's Exposure}
+\begin{columns}
+\column{0.75\textwidth}
+\begin{itemize}[spacing=0.8em]
+    \item \textcolor{witsred}{55\%} increase in heat-related deaths in seniors (1990s--2020s)
+    \item \textcolor{witsred}{148 million} labour hours lost in 2022 → \$241 million income loss
+    \item Rising vector suitability: malaria \textcolor{witsred}{+94\%}, dengue \textcolor{witsred}{+45\%}
+    \item Air pollution from coal → \textcolor{witsred}{10,000+} deaths/year
+\end{itemize}
+\column{0.25\textwidth}
+\begin{tikzpicture}
+\pie[radius=1.2, text=legend, color={witsred, witsorange, witsblue}]{55/Heat deaths, 28/Labour loss, 17/Air pollution}
+\end{tikzpicture}
+\end{columns}
+
+\source{Lancet Countdown South Africa Country Profile, 2023}
+\end{frame}
+
+% Slide 3: Research Sector's Role with improved layout
+\begin{frame}{Research Sector's Role in Emissions}
+\begin{columns}
+\column{0.6\textwidth}
+\begin{itemize}[spacing=0.7em]
+    \item Healthcare contributes \highlight{4--5\% of global GHG emissions}
+    \item Research activities: \highlight{27.5 Mt CO\textsubscript{2}e/year} from 350,000 trials
+    \item Major sources:
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{lc}
+\toprule
+\textbf{Source} & \textbf{Contribution} \\
+\midrule
+Site energy & 38\% \\
+Travel & 22\% \\
+Lab equipment & 19\% \\
+Logistics & 12\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+\column{0.4\textwidth}
+% Carbon emissions chart visualization
+\begin{tikzpicture}
+\pie[radius=1.5, 
+    explode=0.1, 
+    text=label, 
+    color={witsblue!80, witsorange!80, witsgreen!80, witsgray!80},
+    sum=91]{
+    38/Site energy,
+    22/Travel,
+    19/Lab,
+    12/Logistics
+}
+\end{tikzpicture}
+\end{columns}
+
+\source{Nature, 2021: d41586-021-02696-6}
+\end{frame}
+
+% Slide 4: Fixed Why Funders Care with funding policies - matched to image
+\begin{frame}{Why Funders Care: The Funding Imperative}
+% Wellcome Trust Policy box - matching the blue color from image
+\begin{tcolorbox}[
+    colback=white!98, 
+    colframe=witsblue, 
+    width=\textwidth,
+    arc=5mm,
+    boxrule=1pt,
+    title=\textbf{Wellcome Trust Policy}, 
+    fonttitle=\color{white},
+    coltitle=white,
+    toptitle=3mm,
+    bottomtitle=3mm,
+    titlerule=0mm,
+    left=2mm,
+    right=2mm,
+    top=2mm,
+    bottom=2mm
+]
+\begin{center}
+\textit{"Only fund research conducted in an environmentally sustainable way."}
+\end{center}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+\begin{columns}
+\column{0.55\textwidth}
+\begin{itemize}[leftmargin=*, itemsep=1em, topsep=0pt]
+    \item[] {\color{witsblue}\faIcon[regular]{money-bill-alt}} Required to offset travel emissions \& justify design
+    \item[] {\color{witsblue}\faIcon{leaf}} Sustainability now part of \textcolor{witsred}{responsible research conduct}
+    \item[] {\color{witsblue}\faIcon{file-invoice}} Funding applications require climate impact assessment
+    \item[] {\color{witsblue}\faIcon{chart-line}} Increasing focus on "triple bottom line":
+    \begin{itemize}[leftmargin=2em, itemsep=0.2em, label=--]
+        \item Scientific impact
+        \item Financial efficiency
+        \item Environmental sustainability
+    \end{itemize}
+\end{itemize}
+\column{0.45\textwidth}
+\begin{tcolorbox}[
+    colback=white!98, 
+    colframe=witsorange,
+    arc=0mm,
+    boxrule=0pt,
+    title=\textbf{Funder Policies}, 
+    fonttitle=\bfseries\color{white},
+    coltitle=white,
+    toptitle=3mm,
+    bottomtitle=3mm,
+    titlerule=0mm,
+    left=1mm,
+    right=1mm
+]
+\begin{tabular}{p{2.5cm}p{2.9cm}}
+NIH & Climate impact statement \\
+\hline
+Gates Foundation & Carbon neutral commitments \\
+\hline
+MRC & Sustainability scorecard \\
+\hline
+EDCTP & Environmental reporting \\
+\end{tabular}
+\end{tcolorbox}
+\end{columns}
+
+\source{Wellcome Trust \& Global Research Council Survey, 2023}
+\end{frame}
+
+% Slide 4B: Financial Case for Sustainability
+\begin{frame}{The Financial Case for Sustainable Research}
+\begin{columns}
+\column{0.48\textwidth}
+\begin{conceptblock}
+\centering
+\textbf{Cost-Benefit Analysis}\\
+\small
+For every \$1 invested in sustainable lab practices, research institutions save \$1.80 in operational costs over 5 years
+\end{conceptblock}
+
+\vspace{0.3cm}
+\begin{itemize}[spacing=0.4em]
+    \item \greenhighlight{Energy savings:} 30-40\% reduction in utility costs
+    \item \greenhighlight{Equipment longevity:} 15-25\% longer lifecycle
+    \item \greenhighlight{Waste reduction:} 20-30\% lower disposal costs
+    \item \greenhighlight{Grant advantage:} Increasing competitive edge
+\end{itemize}
+
+\column{0.52\textwidth}
+% Bar chart showing increasing trend
+\begin{tikzpicture}
+\begin{axis}[
+    width=\textwidth,
+    height=5cm,
+    ybar,
+    bar width=14pt,
+    xlabel={Year},
+    ylabel={Percentage (\%)},
+    ymin=0,
+    ymax=80,
+    symbolic x coords={2020, 2022, 2024, 2026},
+    xtick=data,
+    nodes near coords,
+    nodes near coords align={vertical},
+    legend style={at={(0.5,-0.15)}, anchor=north, legend columns=-1},
+    ylabel style={font=\small},
+    xlabel style={font=\small},
+    title style={font=\small},
+    title={\textbf{Funders Requiring Climate Provisions}},
+    bar shift=0pt,
+    enlarge x limits=0.15,
+]
+\addplot[fill=witsblue!70] coordinates {(2020,18) (2022,35) (2024,58) (2026,75)};
+\end{axis}
+\end{tikzpicture}
+\end{columns}
+
+\begin{actionblock}
+Efficient resource use aligns financial sustainability with environmental responsibility
+\end{actionblock}
+
+\source{Nature Sustainability: Research Funding Trends, 2024}
+\end{frame}
+
+% Slide 5: Strategic Benefits with visual enhancement
+\begin{frame}{Strategic Benefits for TASK}
+\begin{columns}
+\column{0.7\textwidth}
+\begin{itemize}[spacing=1em]
+    \item \textcolor{witsblue}{\faChartLine} Strengthens relevance \& resilience of research
+    \item \textcolor{witsblue}{\faHandshake} Aligns with global and national climate-health agendas
+    \item \textcolor{witsblue}{\faAward} Improves funder competitiveness
+    \item \textcolor{witsblue}{\faDollarSign} Enhances operational efficiency
+\end{itemize}
+\column{0.3\textwidth}
+% Create a circular WHO logo visualization
+\begin{tikzpicture}
+\node[circle, draw=witsblue, thick, minimum size=2.5cm, fill=witslight] {\includegraphics[width=2cm]{example-image}};
+\node[below=0.2cm] {\small WHO};
+\end{tikzpicture}
+\end{columns}
+
+\source{WHO COP26 Health Programme}
+\end{frame}
+
+% Slide 6: What Can TASK Do with improved layout
+\begin{frame}{What Can TASK Do?}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tcolorbox}[colback=witsgray!20, colframe=witsgray, title=\textbf{Trial Design \& Operations}, fonttitle=\color{white}]
+\begin{itemize}[leftmargin=*, spacing=0.3em]
+    \item Green trial design
+    \item Reduce travel \& shipment
+    \item Cut single-use plastics
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+\begin{tcolorbox}[colback=witsgray!20, colframe=witsgray, title=\textbf{Digital Solutions}, fonttitle=\color{white}]
+\begin{itemize}[leftmargin=*, spacing=0.3em]
+    \item Remote monitoring
+    \item Use virtual tools
+    \item E-consent \& paperless data
+\end{itemize}
+\end{tcolorbox}
+
+\column{0.5\textwidth}
+\begin{tcolorbox}[colback=witsgray!20, colframe=witsgray, title=\textbf{Lab \& Energy}, fonttitle=\color{white}]
+\begin{itemize}[leftmargin=*, spacing=0.3em]
+    \item Optimize lab energy use
+    \item Audit carbon footprint
+    \item Consider renewable energy
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+% Add MyGreenLab logo placeholder
+\begin{tikzpicture}
+\node[rectangle, draw=witsgreen, thick, minimum width=\textwidth, minimum height=2.5cm, rounded corners=3pt] {
+    \begin{tabular}{c}
+        \includegraphics[width=2cm]{example-image-c} \\
+        \small MyGreenLab
+    \end{tabular}
+};
+\end{tikzpicture}
+\end{columns}
+
+\source{MyGreenLab.org}
+\end{frame}
+
+% Slide 7: Lab Sustainability with temperature graphic
+\begin{frame}{Lab Sustainability in Action}
+\begin{columns}
+\column{0.65\textwidth}
+\begin{itemize}[spacing=0.6em]
+    \item Adjust ULT freezers to \highlight{-70°C} (vs -80°C)
+      \begin{itemize}
+        \item Saves 30-40\% energy
+        \item Sample integrity maintained
+      \end{itemize}
+    \item Turn off unused equipment during non-working hours
+    \item Share large equipment between research groups
+    \item Use renewable energy where possible
+\end{itemize}
+\column{0.35\textwidth}
+% Improved thermometer graphic
+\begin{tikzpicture}
+\fill[blue!10] (0,0) rectangle (1.5,6);
+\draw[thick] (0,0) -- (0,6) -- (1.5,6) -- (1.5,0) -- cycle;
+
+% Thermometer markings
+\foreach \y/\l/\c in {0/0°C/black, 2/-40°C/black, 3.9/-70°C/witsred, 4.5/-80°C/witsblue}
+  \draw[thick, color=\c] (-0.2,\y) -- (0,\y) node[left, color=\c] {\l};
+
+% Red mercury
+\fill[witsred] (0.75,0) rectangle (0.75,4.5);
+\fill[witsred] (0.3,0) rectangle (1.2,0.2);
+\draw[witsred, ultra thick] (0.75,4.5) -- (0.75,3.9);
+
+% Energy saving arrow
+\draw[->, witsgreen, ultra thick] (1.7,4.5) -- (1.7,3.9) node[right, color=witsgreen] {Energy saved};
+
+% Thermometer bulb
+\fill[witsred] (0.75,0) circle (0.5);
+\draw[thick] (0.75,0) circle (0.5);
+\end{tikzpicture}
+\end{columns}
+
+\begin{actionblock}
+Simple changes in lab practices can reduce energy use by up to 40\%
+\end{actionblock}
+
+\source{Royal Society of Chemistry: Sustainable Laboratories Report}
+\end{frame}
+
+% Slide 8: Practical Examples with comparison table
+\begin{frame}{Practical Examples}
+\begin{tcolorbox}[colback=witslight, colframe=witsgray, title=\textbf{CRASH Trials Carbon Reduction}, fonttitle=\color{white}]
+\begin{tabular}{lccc}
+\toprule
+\textbf{Metric} & \textbf{CRASH-1} & \textbf{CRASH-2} & \textbf{Reduction} \\
+\midrule
+Total Emissions & 683 tCO₂e & 187 tCO₂e & \textcolor{witsgreen}{73\%} \\
+Per-patient & 0.07 tCO₂e & 0.01 tCO₂e & \textcolor{witsgreen}{85\%} \\
+\bottomrule
+\end{tabular}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+\begin{columns}
+\column{0.1\textwidth}
+\centering
+\textcolor{witsgray}{\faClipboardCheck}
+\column{0.9\textwidth}
+\begin{itemize}[spacing=0.5em]
+    \item Remote monitoring → \highlight{136 tCO\textsubscript{2}e saved}
+    \item Lighter packaging, e-data, and batch shipments cut carbon
+    \item Decentralized labs reduced sample transport emissions
+\end{itemize}
+\end{columns}
+
+\source{BMJ Open: Carbon footprint of trials, 2023}
+\end{frame}
+
+% Slide 9: Conclusion with call to action
+\begin{frame}{Conclusion}
+\begin{center}
+\Large\textbf{\textcolor{witsblue}{Healing without harming}}
+\end{center}
+
+\vspace{0.5cm}
+\begin{columns}
+\column{0.7\textwidth}
+\begin{itemize}[spacing=1em]
+    \item Climate-health is \highlight{core} to effective research
+    \item Funders expect sustainability \& accountability
+    \item TASK can lead on low-carbon trials in Africa
+\end{itemize}
+\column{0.3\textwidth}
+% Hospital icon in a circle
+\begin{tikzpicture}
+\node[circle, fill=witsgreen!20, minimum size=2.5cm] {\textcolor{witsgreen}{\LARGE\faHospital}};
+\end{tikzpicture}
+\end{columns}
+
+\begin{tcolorbox}[colback=witsblue!10, colframe=witsblue]
+\centering
+\textbf{Next steps:} Carbon audit → Action plan → Implementation → Leadership
+\end{tcolorbox}
+\end{frame}
+
+% Slide 10: References with better formatting
+\begin{frame}[allowframebreaks]{References}
+\begin{thebibliography}{99}
+\bibitem{lancet}
+\textbf{The Lancet Countdown} (2023).
+\textit{The 2023 report of the Lancet Countdown on health and climate change.}
+\url{https://www.thelancet.com/countdown-health-climate}
+
+\bibitem{lancetsa}
+\textbf{Lancet Countdown} (2023).
+\textit{South Africa Country Profile.}
+\url{https://www.lancetcountdown.org/south-africa-country-profile}
+
+\bibitem{nature}
+\textbf{Wallis, S. et al.} (2021).
+\textit{Clinical trials: Rethinking how we reduce carbon emissions.}
+Nature, 597(7878), 637.
+
+\bibitem{wellcome}
+\textbf{Wellcome Trust} (2023).
+\textit{Environmental Sustainability Policy.}
+\url{https://wellcome.org/grant-funding/guidance/environmental-sustainability-policy}
+
+\bibitem{who}
+\textbf{World Health Organization} (2021).
+\textit{COP26 Health Programme.}
+\url{https://www.who.int/initiatives/cop26-health-programme}
+
+\bibitem{greenlab}
+\textbf{My Green Lab} (2023).
+\textit{Laboratory Sustainability Best Practices.}
+\url{https://www.mygreenlab.org}
+
+\bibitem{rsc}
+\textbf{Royal Society of Chemistry} (2022).
+\textit{Sustainable Laboratories Report.}
+\url{https://www.rsc.org/sustainable-laboratories-report}
+
+\bibitem{bmj}
+\textbf{Roberts I. et al.} (2023).
+\textit{Carbon footprint of randomised controlled trials: retrospective study of CRASH trials.}
+BMJ Open, 13(5):e070648.
+\end{thebibliography}
+\end{frame}
+
+% Thank you slide with Wits Planetary Health styling
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture, overlay]
+% Background elements - matching the rendered peach/blue design
+\fill[witspeach] (current page.north west) rectangle (current page.north east |- current page.south west + (0,9));
+\fill[witsblue] (current page.south west) rectangle (current page.south east |- current page.south west + (0,5));
+% Add curved transition between colors
+\fill[witsblue] (current page.west |- current page.south west + (0,9)) 
+    .. controls +(6,1.5) and +(-2,-1) .. 
+    (current page.east |- current page.south west + (0,6.5));
+\end{tikzpicture}
+
+\vspace*{2cm}
+\begin{center}
+{\Large\textbf{\textcolor{witsblue}{Thank you}}}
+
+\vspace{1cm}
+{\large\textcolor{witsgray}{Questions?}}
+
+\vspace{3cm}
+\begin{tabular}{rp{0.5cm}l}
+\textcolor{white}{\faEnvelope} && \textcolor{white}{craig.parker@wits.ac.za}\\
+\textcolor{white}{\faGlobe} && \textcolor{white}{www.witsplanetaryhealth.org}\\
+\textcolor{white}{\faTwitter} && \textcolor{white}{@WitsPlanetaryHealth}
+\end{tabular}
+\end{center}
+
+\begin{tikzpicture}[remember picture, overlay]
+% Logo placement
+\node[anchor=south west, xshift=1cm, yshift=0.5cm] at (current page.south west) {\textcolor{white}{\Large\faGlobeAfrica\ \textbf{Wits Planetary Health}}};
+\end{tikzpicture}
+\end{frame}
+
+\end{document}
