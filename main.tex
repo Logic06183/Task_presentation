@@ -13,6 +13,11 @@
 \usepackage{tcolorbox}
 \usepackage{listings}
 \usepackage{enumitem}
+% Define spacing for enumitem to avoid 'spacing undefined' error
+\SetEnumitemKey{spacing}{itemsep}
+
+% For including PDF images of diagrams
+\usepackage{pdfpages}
 
 % Custom colors
 \definecolor{taskblue}{RGB}{0, 83, 155}
@@ -36,7 +41,8 @@
 \title[Climate \& Health for TASK]{\textbf{Decarbonizing Clinical Research:} \\Why Climate and Health Should Be a Strategic Priority for TASK}
 \author{\textbf{Craig Parker} \\ \small{Wits Planetary Health, University of the Witwatersrand}}
 \date{\textbf{TASK Clinical Trials Afternoon Lecture, 2025}}
-\logo{\includegraphics[height=1cm]{example-image}} % Replace with TASK logo
+% Logo commented out until image available
+% \logo{\includegraphics[height=1cm]{example-image}}
 
 % Custom commands for consistent styling
 \newcommand{\highlight}[1]{\textcolor{taskred}{\textbf{#1}}}
@@ -48,120 +54,87 @@
 
 \begin{document}
 
-% Title page with visual enhancement
+% Title page with simple styling
 \begin{frame}[plain]
 \titlepage
-\begin{tikzpicture}[remember picture, overlay]
-\fill[taskblue!30] (current page.south west) rectangle (current page.south east |- current page.south west + (0,1));
-\node[anchor=south east, xshift=-0.5cm, yshift=0.3cm] at (current page.south east) {\small\textcolor{white}{Climate \& Health Initiative}};
-\end{tikzpicture}
+
+% Instead of using TikZ for the footer, we'll use a simple colored box
+\vspace*{\fill}
+\begin{beamercolorbox}[wd=\paperwidth,ht=1cm,dp=0ex]{structure.fg}
+  \hfill{\small\textcolor{white}{Climate \& Health Initiative}}\hspace{0.5cm}\strut
+\end{beamercolorbox}
 \end{frame}
 
-% Slide 1: Enhanced with icon and impact block
+% Slide 1: Using Climate Health Impact Flow Diagram
 \begin{frame}{Why Climate and Health Matter}
-\begin{columns}
-\column{0.1\textwidth}
-\centering
-\faIcon{thermometer-full}\\
-\vspace{0.5cm}
-\faIcon{globe-africa}\\
-\vspace{0.5cm}
-\faIcon{hand-holding-medical}
-\column{0.9\textwidth}
-\begin{itemize}[spacing=0.5em]
-    \item Climate change is a \highlight{public health emergency}: rising deaths, heat stress, and malnutrition
-    \item LMICs, including South Africa, face disproportionate burdens
-    \item Health costs of climate inaction in LMICs: \highlight{US\$8.6--20.8 trillion by 2050}
-\end{itemize}
-\end{columns}
-
-\begin{impactblock}
-Climate change threatens to reverse decades of progress in global health outcomes
-\end{impactblock}
-
-\source{The Lancet Countdown, 2023}
+    % Replace icons with comprehensive flow diagram
+    % Check if image exists before including
+\IfFileExists{diagrams/pdf/climate_health_impact_flow.png}{%
+    \includegraphics[width=\textwidth,height=0.7\textheight]{diagrams/pdf/climate_health_impact_flow.png}%
+}{%
+    \centering\Large\textbf{[Climate Health Impact Flow Diagram]}%
+    \vspace{2cm}%
+}
+    
+    \begin{impactblock}
+    Climate change threatens to reverse decades of progress in global health outcomes
+    \end{impactblock}
+    
+    \source{The Lancet Countdown, 2023}
 \end{frame}
 
-% Slide 2: South Africa's Exposure with visual enhancements
+% Slide 2: Using South Africa's Climate Vulnerability Map
 \begin{frame}{South Africa's Exposure}
-\begin{columns}
-\column{0.65\textwidth}
-\begin{itemize}[spacing=0.5em]
-    \item \textcolor{taskred}{55\%} increase in heat-related deaths in seniors (1990s--2020s)
-    \item \textcolor{taskred}{148 million} labour hours lost in 2022 → \$241 million income loss
-    \item Rising vector suitability: malaria \textcolor{taskred}{+94\%}, dengue \textcolor{taskred}{+45\%}
-    \item Air pollution from coal → \textcolor{taskred}{10,000+} deaths/year
-\end{itemize}
-\column{0.35\textwidth}
-\begin{tikzpicture}
-\pie[radius=1.5]{55/Heat deaths, 28/Labour loss, 17/Air pollution}
-\end{tikzpicture}
-\end{columns}
-
-\source{Lancet Countdown South Africa Country Profile, 2023}
+    % Replace pie chart with vulnerability map
+    % Check if image exists before including
+\IfFileExists{diagrams/pdf/sa_climate_vulnerability_map.png}{%
+    \includegraphics[width=\textwidth,height=0.8\textheight]{diagrams/pdf/sa_climate_vulnerability_map.png}%
+}{%
+    \centering\Large\textbf{[South Africa Climate Vulnerability Map]}%
+    \vspace{2cm}%
+}
+    
+    \source{Lancet Countdown South Africa Country Profile, 2023}
 \end{frame}
 
-% Slide 3: Research Sector's Role with improved layout
+% Slide 3: Using Research Emissions Sankey Diagram
 \begin{frame}{Research Sector's Role in Emissions}
-\begin{columns}
-\column{0.6\textwidth}
-\begin{itemize}[spacing=0.5em]
-    \item Healthcare contributes \highlight{4--5\% of global GHG emissions}
-    \item Research activities: \highlight{27.5 Mt CO\textsubscript{2}e/year} from 350,000 trials
-    \item Major sources:
-\end{itemize}
-
-\begin{center}
-\begin{tabular}{lc}
-\toprule
-\textbf{Source} & \textbf{Contribution} \\
-\midrule
-Site energy & 38\% \\
-Travel & 22\% \\
-Lab equipment & 19\% \\
-Logistics & 12\% \\
-\bottomrule
-\end{tabular}
-\end{center}
-\column{0.4\textwidth}
-\includegraphics[width=\textwidth]{example-image-a} % Replace with actual graph
-\end{columns}
-
-\source{Nature, 2021: d41586-021-02696-6}
+    % Replace table and image with Sankey diagram
+    % Check if image exists before including
+\IfFileExists{diagrams/pdf/research_emissions_sankey.png}{%
+    \includegraphics[width=\textwidth,height=0.8\textheight]{diagrams/pdf/research_emissions_sankey.png}%
+}{%
+    \centering\Large\textbf{[Research Emissions Sankey Diagram]}%
+    \vspace{2cm}%
+}
+    
+    \source{Nature, 2021: d41586-021-02696-6}
 \end{frame}
 
-% Slide 4: Why Funders Care with quote box
+% Slide 4: Using Funding Priorities Venn Diagram
 \begin{frame}{Why Funders Care}
-\begin{tcolorbox}[colback=white, colframe=taskblue, title=\textbf{Wellcome Trust Policy}]
-\centering
-\textit{"Only fund research conducted in an environmentally sustainable way."}
-\end{tcolorbox}
-
-\vspace{0.5cm}
-\begin{columns}
-\column{0.1\textwidth}
-\centering
-\faIcon{money-bill-wave}
-\column{0.9\textwidth}
-\begin{itemize}[spacing=0.5em]
-    \item Required to offset travel emissions \& justify design
-    \item Sustainability is now part of \highlight{responsible research conduct}
-    \item Funding applications require climate impact assessment
-\end{itemize}
-\end{columns}
-
-\begin{actionblock}
-Research proposals without sustainability considerations increasingly face rejection
-\end{actionblock}
-
-\source{Wellcome Trust Environmental Sustainability Policy}
+    \begin{tcolorbox}[colback=white, colframe=taskblue, title=\textbf{Wellcome Trust Policy}]
+    \centering
+    \textit{"Only fund research conducted in an environmentally sustainable way."}
+    \end{tcolorbox}
+    
+    % Replace text with Venn diagram
+    % Check if image exists before including
+\IfFileExists{diagrams/pdf/funding_priorities_venn.png}{%
+    \includegraphics[width=\textwidth,height=0.65\textheight]{diagrams/pdf/funding_priorities_venn.png}%
+}{%
+    \centering\Large\textbf{[Funding Priorities Venn Diagram]}%
+    \vspace{2cm}%
+}
+    
+    \source{Wellcome Trust Environmental Sustainability Policy}
 \end{frame}
 
 % Slide 5: Strategic Benefits with visual enhancement
 \begin{frame}{Strategic Benefits for TASK}
 \begin{columns}
 \column{0.7\textwidth}
-\begin{itemize}[spacing=1em]
+\begin{itemize}[itemsep=1em]
     \item \faIcon{chart-line} Strengthens relevance \& resilience of research
     \item \faIcon{handshake} Aligns with global and national climate-health agendas
     \item \faIcon{award} Improves funder competitiveness
@@ -171,134 +144,79 @@ Research proposals without sustainability considerations increasingly face rejec
 \includegraphics[width=\textwidth]{example-image-b} % Replace with WHO logo or relevant image
 \end{columns}
 
-\begin{tikzpicture}[remember picture, overlay]
-\node[anchor=south east, xshift=-0.5cm, yshift=0.5cm] at (current page.south east) {\includegraphics[width=2cm]{example-image}}; % Replace with relevant logo
-\end{tikzpicture}
+% Simplified logo placement
+\begin{flushright}
+\includegraphics[width=2cm]{example-image} % Replace with relevant logo
+\end{flushright}
 
 \source{WHO COP26 Health Programme}
 \end{frame}
 
-% Slide 6: What Can TASK Do with improved layout
+% Slide 6: Using Green Trial Design Framework
 \begin{frame}{What Can TASK Do?}
-\begin{columns}
-\column{0.5\textwidth}
-\begin{tcolorbox}[colback=taskgreen!10, colframe=taskgreen, title=\textbf{Trial Design \& Operations}]
-\begin{itemize}[leftmargin=*]
-    \item \textcolor{taskgreen}{▶} Green trial design
-    \item \textcolor{taskgreen}{▶} Reduce travel \& shipment
-    \item \textcolor{taskgreen}{▶} Cut single-use plastics
-\end{itemize}
-\end{tcolorbox}
-
-\vspace{0.3cm}
-\begin{tcolorbox}[colback=taskblue!10, colframe=taskblue, title=\textbf{Digital Solutions}]
-\begin{itemize}[leftmargin=*]
-    \item \textcolor{taskblue}{▶} Remote monitoring
-    \item \textcolor{taskblue}{▶} Use virtual tools
-    \item \textcolor{taskblue}{▶} E-consent \& paperless data
-\end{itemize}
-\end{tcolorbox}
-
-\column{0.5\textwidth}
-\begin{tcolorbox}[colback=taskorange!10, colframe=taskorange, title=\textbf{Lab \& Energy}]
-\begin{itemize}[leftmargin=*]
-    \item \textcolor{taskorange}{▶} Optimize lab energy use
-    \item \textcolor{taskorange}{▶} Audit carbon footprint
-    \item \textcolor{taskorange}{▶} Consider renewable energy
-\end{itemize}
-\end{tcolorbox}
-
-\vspace{0.3cm}
-\includegraphics[width=\textwidth]{example-image-c} % Replace with Green Lab logo
-\end{columns}
-
-\source{MyGreenLab.org}
+    % Replace boxes with framework diagram
+    % Check if image exists before including
+\IfFileExists{diagrams/pdf/green_trial_design_framework.png}{%
+    \includegraphics[width=\textwidth,height=0.8\textheight]{diagrams/pdf/green_trial_design_framework.png}%
+}{%
+    \centering\Large\textbf{[Green Trial Design Framework]}%
+    \vspace{2cm}%
+}
+    
+    \source{MyGreenLab.org}
 \end{frame}
 
-% Slide 7: Lab Sustainability with temperature graphic
+% Slide 7: Using ULT Freezer Temperature-Energy Curve
 \begin{frame}{Lab Sustainability in Action}
-\begin{columns}
-\column{0.6\textwidth}
-\begin{itemize}[spacing=0.8em]
-    \item Adjust ULT freezers to \highlight{-70°C} (vs -80°C)
-      \begin{itemize}
-        \item Saves 30-40\% energy
-        \item Sample integrity maintained
-      \end{itemize}
-    \item Turn off unused equipment during non-working hours
-    \item Share large equipment between research groups
-    \item Use renewable energy where possible
-\end{itemize}
-\column{0.4\textwidth}
-\begin{tikzpicture}
-\draw[thick, fill=blue!20] (0,0) -- (0,4) -- (1,4) -- (1,0) -- cycle;
-\draw[thick] (-0.2,0) -- (1.2,0);
-\foreach \y/\l in {0/0°C, 2/-40°C, 3/-70°C, 3.6/-80°C}
-  \draw (-0.2,\y) -- (0,\y) node[left] {\l};
-\draw[red, ultra thick] (0.5,3.6) -- (0.5,3) node[right] {\textcolor{taskgreen}{↓ Energy}};
-\end{tikzpicture}
-\end{columns}
-
-\begin{actionblock}
-Simple changes in lab practices can reduce energy use by up to 40\%
-\end{actionblock}
-
-\source{Royal Society of Chemistry: Sustainable Laboratories Report}
+    % Replace temperature graphic with detailed curve
+    % Check if image exists before including
+\IfFileExists{diagrams/pdf/freezer_temperature_energy_curve.png}{%
+    \includegraphics[width=\textwidth,height=0.8\textheight]{diagrams/pdf/freezer_temperature_energy_curve.png}%
+}{%
+    \centering\Large\textbf{[Freezer Temperature Energy Curve]}%
+    \vspace{2cm}%
+}
+    
+    \begin{actionblock}
+    Simple changes in lab practices can reduce energy use by up to 40\%
+    \end{actionblock}
+    
+    \source{Royal Society of Chemistry: Sustainable Laboratories Report}
 \end{frame}
 
-% Slide 8: Practical Examples with comparison table
+% Slide 8: Using CRASH Trials Comparative Dashboard
 \begin{frame}{Practical Examples}
-\begin{tcolorbox}[colback=white, colframe=taskblue, title=\textbf{CRASH Trials Carbon Reduction}]
-\begin{tabular}{lccc}
-\toprule
-\textbf{Metric} & \textbf{CRASH-1} & \textbf{CRASH-2} & \textbf{Reduction} \\
-\midrule
-Total Emissions & 683 tCO₂e & 187 tCO₂e & 73\% \\
-Per-patient & 0.07 tCO₂e & 0.01 tCO₂e & 85\% \\
-\bottomrule
-\end{tabular}
-\end{tcolorbox}
-
-\vspace{0.3cm}
-\begin{columns}
-\column{0.1\textwidth}
-\centering
-\faIcon{clipboard-check}
-\column{0.9\textwidth}
-\begin{itemize}[spacing=0.5em]
-    \item Remote monitoring → \highlight{136 tCO\textsubscript{2}e saved}
-    \item Lighter packaging, e-data, and batch shipments cut carbon
-    \item Decentralized labs reduced sample transport emissions
-\end{itemize}
-\end{columns}
-
-\source{BMJ Open: Carbon footprint of trials, 2023}
+    % Replace table with dashboard
+    % Check if image exists before including
+\IfFileExists{diagrams/pdf/crash_trials_dashboard.png}{%
+    \includegraphics[width=\textwidth,height=0.8\textheight]{diagrams/pdf/crash_trials_dashboard.png}%
+}{%
+    \centering\Large\textbf{[CRASH Trials Dashboard]}%
+    \vspace{2cm}%
+}
+    
+    \source{BMJ Open: Carbon footprint of trials, 2023}
 \end{frame}
 
-% Slide 9: Conclusion with call to action
+% Slide 9: Using Climate-Health Action Roadmap
 \begin{frame}{Conclusion}
-\begin{center}
-\Large\textbf{\textcolor{taskblue}{Healing without harming}}
-\end{center}
-
-\vspace{0.5cm}
-\begin{columns}
-\column{0.7\textwidth}
-\begin{itemize}[spacing=1em]
-    \item Climate-health is \highlight{core} to effective research
-    \item Funders expect sustainability \& accountability
-    \item TASK can lead on low-carbon trials in Africa
-\end{itemize}
-\column{0.3\textwidth}
-\begin{tikzpicture}
-\node[circle, fill=taskgreen!30, minimum size=2.5cm] {\faIcon[regular]{hospital}};
-\end{tikzpicture}
-\end{columns}
-
-\begin{tcolorbox}[colback=taskblue!10, colframe=taskblue]
-\centering
-\textbf{Next steps:} Carbon audit → Action plan → Implementation → Leadership
-\end{tcolorbox}
+    \begin{center}
+    \Large\textbf{\textcolor{taskblue}{Healing without harming}}
+    \end{center}
+    
+    % Replace icon and next steps box with roadmap
+    % Check if image exists before including
+\IfFileExists{diagrams/pdf/climate_health_roadmap.png}{%
+    \includegraphics[width=\textwidth,height=0.7\textheight]{diagrams/pdf/climate_health_roadmap.png}%
+}{%
+    \centering\Large\textbf{[Climate Health Action Roadmap]}%
+    \vspace{2cm}%
+}
+    
+    \begin{itemize}[itemsep=0.7em]
+        \item Climate-health is \highlight{core} to effective research
+        \item TASK can lead on low-carbon trials in Africa
+    \end{itemize}
 \end{frame}
 
 % Slide 10: References with better formatting
@@ -360,9 +278,12 @@ BMJ Open, 13(5):e070648.
 \faTwitter\ @WitsPlanetaryHealth
 \end{center}
 
-\begin{tikzpicture}[remember picture, overlay]
-\node[anchor=south, yshift=0.5cm] at (current page.south) {\includegraphics[width=6cm]{example-image}}; % Replace with institution logos
-\end{tikzpicture}
+% Simplified logo placement
+\begin{center}
+\vspace{1cm}
+% \includegraphics[width=6cm]{example-image} % Commented out until logos available
+\textbf{[Institution logos]}
+\end{center}
 \end{frame}
 
 \end{document}

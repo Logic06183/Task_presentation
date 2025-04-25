@@ -1,0 +1,45 @@
+# Enhancing the South Africa Climate Vulnerability Map
+
+## Step 1: Obtain a Proper South Africa Map
+1. Go to https://commons.wikimedia.org/wiki/File:Map_of_South_Africa_with_provinces_shaded_and_districts_numbered_(2016).svg
+2. Download the SVG file of South Africa with provinces
+3. In Draw.io, use Insert > Image to add this SVG map to your diagram
+
+## Step 2: Add Province-Based Climate Vulnerability Data
+Apply these gradient overlays to provinces:
+
+- Western Cape (Heat vulnerability): #B22222 with 30% opacity
+- KwaZulu-Natal (Vector-borne diseases): #FF8C00 with 30% opacity  
+- Gauteng (Air pollution): #228B22 with 30% opacity
+- Limpopo (Heat stress): #B22222 with 30% opacity
+- Eastern Cape (Drought): #87CEFA with 30% opacity
+- North West (Agricultural impact): #FFD700 with 30% opacity
+
+## Step 3: Add City Markers
+Add markers for these major cities with climate vulnerability indicators:
+
+- Cape Town (33.9249° S, 18.4241° E): Heat waves icon
+- Durban (29.8587° S, 31.0218° E): Flood/storm icon
+- Johannesburg (26.2041° S, 28.0473° E): Air pollution icon
+- Pretoria (25.7479° S, 28.2293° E): Urban heat island icon
+- Bloemfontein (29.0852° S, 26.1596° E): Drought icon
+- Port Elizabeth (33.9608° S, 25.6022° E): Water scarcity icon
+
+## Step 4: Add Data Visualization Elements
+Add these data visualization elements:
+
+1. Heat-related deaths: Small bar chart showing 55% increase (near Western Cape)
+2. Labor hours: Icon showing 148 million hours lost with $241 million value (near Gauteng)
+3. Disease vectors: Small map showing malaria and dengue increase (near KZN)
+4. Air pollution: Small icon showing 10,000+ deaths/year (near Gauteng)
+
+## Step 5: Enhance the Legend
+Create a more visually appealing legend with:
+- Color gradient swatches
+- Clear headings
+- Small icons matching those on the map
+- Percentage indicators for severity
+
+## Step 6: Add Data Source and Title
+- Add a proper citation: "Source: Lancet Countdown South Africa Country Profile, 2023"
+- Create a bold, gradient title: "South Africa's Climate Change Vulnerability"
