@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="CRASH Trials Dashboard" id="crash-trials">
-        <mxGraphModel dx="499" dy="832" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="690" dy="428" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -61,7 +61,7 @@
                 <mxCell id="19" value="136 tCO₂e saved" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#00539B;fontStyle=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="240" y="465" width="120" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="• Reduced site visits from 8 to 2&#10;• Central statistical monitoring&#10;• Risk-based approach&#10;• Digital verification of records" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="20" value="• Reduced site visits from 8 to 2&#10;• Central statistical monitoring&#10;• Risk-based approach&#10;• Digital verification of records" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="200" y="490" width="200" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="21" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FFF0;strokeColor=#228B22;" parent="1" vertex="1">
@@ -73,7 +73,7 @@
                 <mxCell id="23" value="87 tCO₂e saved" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#228B22;fontStyle=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="490" y="465" width="120" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="24" value="• Electronic case report forms&#10;• Web-based data entry&#10;• Elimination of paper CRFs&#10;• Cloud-based document storage" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="24" value="• Electronic case report forms&#10;• Web-based data entry&#10;• Elimination of paper CRFs&#10;• Cloud-based document storage" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="450" y="490" width="200" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="25" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0F0;strokeColor=#B22222;" parent="1" vertex="1">
@@ -85,7 +85,7 @@
                 <mxCell id="27" value="65 tCO₂e saved" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#B22222;fontStyle=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="740" y="465" width="120" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" value="• Reduced packaging weight&#10;• Batch shipping of supplies&#10;• Local lab processing&#10;• Fewer international shipments" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="28" value="• Reduced packaging weight&#10;• Batch shipping of supplies&#10;• Local lab processing&#10;• Fewer international shipments" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="700" y="490" width="200" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="29" value="&lt;b&gt;Lessons Learned for TASK Trials&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#00539B;fontColor=#FFFFFF;" parent="1" vertex="1">
