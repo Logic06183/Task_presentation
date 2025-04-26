@@ -1,0 +1,133 @@
+<mxfile host="65bd71144e">
+    <diagram name="Lab Sustainability Certifications" id="lab-certifications">
+        <mxGraphModel dx="690" dy="428" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;font style=&quot;font-size: 24px;&quot; face=&quot;Arial&quot;&gt;&lt;b&gt;Laboratory Sustainability Certification Programs&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#00539B;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="20" width="700" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="70" width="900" height="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;font face=&quot;Arial&quot; style=&quot;font-size: 18px;&quot; color=&quot;#228b22&quot;&gt;&lt;b&gt;My Green Lab Certification&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="80" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;font face=&quot;Arial&quot; style=&quot;font-size: 18px;&quot; color=&quot;#00539b&quot;&gt;&lt;b&gt;LEAF Framework&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="650" y="80" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#228B22;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="120" width="420" height="410" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#00539B;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="120" width="420" height="410" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Arial&quot;&gt;&lt;b&gt;Global Gold Standard&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#228B22;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="130" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Arial&quot;&gt;&lt;b&gt;Lab Efficiency Assessment Framework&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#00539B;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="130" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;h3 style=&quot;font-family: Arial; font-size: 15px;&quot;&gt;&lt;font color=&quot;#228b22&quot;&gt;Key Focus Areas&lt;/font&gt;&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="235" y="170" width="210" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;h3 style=&quot;font-family: Arial; font-size: 15px;&quot;&gt;&lt;font color=&quot;#00539b&quot;&gt;Tiered Achievement Levels&lt;/font&gt;&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="675" y="170" width="210" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFFFFF;strokeColor=#228B22;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="210" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;font face=&quot;Arial&quot;&gt;&lt;b&gt;Energy&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#228B22;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="225" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;font style=&quot;font-size: 11px;&quot; face=&quot;Arial&quot;&gt;Equipment, lighting, HVAC&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="165" y="255" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFFFFF;strokeColor=#228B22;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="210" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;font face=&quot;Arial&quot;&gt;&lt;b&gt;Water&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#228B22;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="225" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;font style=&quot;font-size: 11px;&quot; face=&quot;Arial&quot;&gt;Conservation and efficient use&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="295" y="255" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFFFFF;strokeColor=#228B22;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="210" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="&lt;font face=&quot;Arial&quot;&gt;&lt;b&gt;Waste&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#228B22;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="225" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&lt;font style=&quot;font-size: 11px;&quot; face=&quot;Arial&quot;&gt;Reduction, recycling, hazardous materials&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="425" y="255" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFFFFF;strokeColor=#228B22;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="320" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;font face=&quot;Arial&quot;&gt;&lt;b&gt;Chemicals&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#228B22;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="335" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;font style=&quot;font-size: 11px;&quot; face=&quot;Arial&quot;&gt;Inventory, management, green alternatives&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="165" y="365" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFFFFF;strokeColor=#228B22;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="320" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="&lt;font face=&quot;Arial&quot;&gt;&lt;b&gt;Materials&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#228B22;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="335" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;font style=&quot;font-size: 11px;&quot; face=&quot;Arial&quot;&gt;Procurement, plastics reduction&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="295" y="365" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFFFFF;strokeColor=#228B22;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="320" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="&lt;font face=&quot;Arial&quot;&gt;&lt;b&gt;Community&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#228B22;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="335" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="&lt;font style=&quot;font-size: 11px;&quot; face=&quot;Arial&quot;&gt;Engagement, training, advocacy&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="425" y="365" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: Arial; font-size: 14px; background-color: initial;&quot;&gt;• Comprehensive assessment covering all lab operations&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: Arial; font-size: 14px; background-color: initial;&quot;&gt;• Recognized by major pharma and biotech companies&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: Arial; font-size: 14px; background-color: initial;&quot;&gt;• Expands globally including African laboratories&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: Arial; font-size: 14px; background-color: initial;&quot;&gt;• Tiered certification levels&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: Arial; font-size: 14px; background-color: initial;&quot;&gt;• Cape Town lab seeking highest level certification&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="440" width="380" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#C5E1A5;strokeColor=#228B22;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="210" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#90CAF9;strokeColor=#00539B;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="210" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFCC80;strokeColor=#FF8C00;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="850" y="210" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="&lt;font face=&quot;Arial&quot; style=&quot;font-size: 16px;&quot; color=&quot;#228b22&quot;&gt;&lt;b&gt;BRONZE&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="225" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="&lt;font face=&quot;Arial&quot; style=&quot;font-size: 16px;&quot; color=&quot;#00539b&quot;&gt;&lt;b&gt;SILVER&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="225" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="&lt;font face=&quot;Arial&quot; style=&quot;font-size: 16px;&quot; color=&quot;#ff8c00&quot;&gt;&lt;b&gt;GOLD&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="880" y="225" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Arial&quot;&gt;Basic criteria&lt;br&gt;Essential actions&lt;br&gt;First steps&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="265" width="60" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Arial&quot;&gt;Advanced criteria&lt;br&gt;Higher impact&lt;br&gt;System changes&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="265" width="60" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Arial&quot;&gt;Excellence criteria&lt;br&gt;Leadership&lt;br&gt;Innovation&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="880" y="265" width="60" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial; font-family: Arial; font-size: 14px;&quot;&gt;• Developed by University College London&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial; font-family: Arial; font-size: 14px;&quot;&gt;• Practical tracking tool and specific criteria&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial; font-family: Arial; font-size: 14px;&quot;&gt;• Demonstrated savings:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial; font-family: Arial; font-size: 14px;&quot;&gt;&amp;nbsp; &amp;nbsp;- 648 tonnes CO₂e reduction in pilot&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial; font-family: Arial; font-size: 14px;&quot;&gt;&amp;nbsp; &amp;nbsp;- £640,000 cost savings in 2 years&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial; font-family: Arial; font-size: 14px;&quot;&gt;&amp;nbsp; &amp;nbsp;- £3,700 average savings per lab annually&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial; font-family: Arial; font-size: 14px;&quot;&gt;• 85+ organizations worldwide participating&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="340" width="380" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="&lt;h3 style=&quot;font-family: Arial; text-align: center;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot; color=&quot;#00539b&quot;&gt;&lt;i&gt;99% of participating researchers continue using LEAF after initial implementation&lt;/i&gt;&lt;/font&gt;&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="490" width="380" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="&lt;font face=&quot;Arial&quot; color=&quot;#666666&quot; style=&quot;font-size: 11px;&quot;&gt;Sources: My Green Lab, 2024; Synexa Life Sciences, 2024; Nature BJC Reports, 2024&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=2" vertex="1" parent="1">
+                    <mxGeometry x="570" y="530" width="400" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
