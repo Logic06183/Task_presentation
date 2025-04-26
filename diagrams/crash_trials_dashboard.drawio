@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="CRASH Trials Dashboard" id="crash-trials">
-        <mxGraphModel dx="690" dy="428" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="434" dy="428" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -104,7 +104,7 @@
                     <mxGeometry y="120" width="420" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="34" value="CRASH-1: 10,008 participants, 239 hospitals, 49 countries&lt;br&gt;CRASH-2: 20,211 participants, 274 hospitals, 40 countries" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0.42;fillColor=#00539B;fontColor=#FFFFFF;strokeColor=#00539B;base=20;size=30;position=0.42;" parent="1" vertex="1">
-                    <mxGeometry x="430" y="256" width="310" height="85" as="geometry"/>
+                    <mxGeometry x="430" y="250" width="310" height="91" as="geometry"/>
                 </mxCell>
                 <mxCell id="35" value="Source: BMJ Open: Carbon footprint of randomised controlled trials, 2023" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#666666;fontSize=10;" parent="1" vertex="1">
                     <mxGeometry x="440" y="750" width="370" height="20" as="geometry"/>

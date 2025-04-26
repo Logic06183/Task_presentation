@@ -166,22 +166,72 @@
     \source{MyGreenLab.org}
 \end{frame}
 
-% Slide 7: Using ULT Freezer Temperature-Energy Curve
-\begin{frame}{Lab Sustainability in Action}
-    % Replace temperature graphic with detailed curve
-    % Check if image exists before including
-\IfFileExists{diagrams/pdf/freezer_temperature_energy_curve.png}{%
-    \includegraphics[width=\textwidth,height=0.8\textheight]{diagrams/pdf/freezer_temperature_energy_curve.png}%
-}{%
-    \centering\Large\textbf{[Freezer Temperature Energy Curve]}%
-    \vspace{2cm}%
-}
+% Slide 7: Using ULT Freezer Temperature-Energy Curve with enhanced TikZ visualization
+\begin{frame}{Lab Sustainability in Action: ULT Freezers}
+    \begin{columns}[T,onlytextwidth]
+        \column{0.55\textwidth}
+        % Custom TikZ visualization of freezer temperature vs energy consumption
+        \begin{tikzpicture}[scale=0.75]
+            % Define colors for visualization
+            \definecolor{coldblue}{RGB}{0,102,204}
+            \definecolor{energyred}{RGB}{204,0,0}
+            
+            % Setup coordinates
+            \draw[thick, ->] (0,0) -- (8,0) node[right] {\textbf{Temperature (°C)}};
+            \draw[thick, ->] (0,0) -- (0,6) node[above] {\textbf{Energy Use (kWh/day)}};
+            
+            % Temperature ticks and labels
+            \foreach \x/\label in {1/-80, 3/-70, 5/-60, 7/-50}
+                \draw[thick] (\x,0.1) -- (\x,-0.1) node[below] {\label};
+            
+            % Energy ticks and labels
+            \foreach \y/\label in {1/5, 2.5/12, 4/19, 5.5/26}
+                \draw[thick] (0.1,\y) -- (-0.1,\y) node[left] {\label};
+            
+            % Energy curve
+            \draw[very thick, energyred] (1,5.5) .. controls (3,3.8) and (5,2.2) .. (7,1) 
+                node[right, align=left] {\footnotesize \textbf{\textcolor{energyred}{Energy}}};
+            
+            % Fill area under curve
+            \fill[energyred!20] (1,0) -- (1,5.5) .. controls (3,3.8) and (5,2.2) .. (7,1) -- (7,0) -- cycle;
+            
+            % Highlight optimal range
+            \fill[coldblue!20] (3,0) rectangle (5,6);
+            \node[align=center, text width=2cm] at (4,4.5) {\textbf{\textcolor{coldblue}{Optimal\\Range}}};
+            
+            % Add savings callout
+            \node[draw=taskgreen, fill=taskgreen!10, rounded corners, text width=3cm, align=center, font=\small\bf] 
+                at (6,4) {Moving from -80°C to -70°C saves 30\% energy!};
+                
+            % Add freezer icon
+            \node at (1.5,2) {\scalebox{2}{\faSnowflake}};          
+        \end{tikzpicture}
+        
+        \column{0.45\textwidth}
+        % Key facts and recommendations
+        \begin{tcolorbox}[title=\textbf{ULT Freezer Facts}, colback=tasklightblue!15, colframe=taskblue, fonttitle=\bfseries\color{white}]
+            \begin{itemize}[itemsep=0.3em]
+                \item Uses as much energy as an entire household
+                \item -80°C uses 2-3× more energy than -70°C
+                \item Most samples remain viable at -70°C
+            \end{itemize}
+        \end{tcolorbox}
+        \vspace{0.3cm}
+        \begin{tcolorbox}[title=\textbf{Recommendations}, colback=taskgreen!15, colframe=taskgreen, fonttitle=\bfseries\color{white}]
+            \begin{enumerate}[itemsep=0.3em]
+                \item Run freezers at -70°C instead of -80°C
+                \item Maintain proper inventory management
+                \item Implement scheduled defrosting
+                \item Invest in energy-efficient models
+            \end{enumerate}
+        \end{tcolorbox}
+    \end{columns}
     
     \begin{actionblock}
-    Simple changes in lab practices can reduce energy use by up to 40\%
+    Simple changes in lab freezer management can reduce energy use by up to 40\% and extend equipment life
     \end{actionblock}
     
-    \source{Royal Society of Chemistry: Sustainable Laboratories Report}
+    \source{Royal Society of Chemistry: Sustainable Laboratories Report \cite{rsc}}
 \end{frame}
 
 % Slide 8: Using CRASH Trials Comparative Dashboard
